@@ -3,7 +3,12 @@
 
 {% block content %}
 
-<h1>create(form)</h1>
+{% if request.resolver_match.url_name == 'create2' %}
+    <h1>create(form)</h1>
+{% else %}
+    <h1>update(form)</h1>
+{% endif %}
+
 <form action="" method="POST">
     {% csrf_token %}
     {{form}}
