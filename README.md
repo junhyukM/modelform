@@ -47,4 +47,3 @@ admin.site.register(Article)
 
 
 
-
