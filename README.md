@@ -31,7 +31,19 @@ class Article(models.Model):
 ```    
 2. python manage.py makemigrations
 3. python manage.py migrate
-4. 
+
+
+
+## admin 페이지 들어가기
+admin.py 에서
+```python
+from django.contrib import admin
+from .models import Article
+
+# Register your models here.
+admin.site.register(Article)
+```
+- python manage.py createsuperuser
 
 
 
